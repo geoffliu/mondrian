@@ -27,10 +27,6 @@ function getGridCells(horizontalSplits: number[], verticalSplits: number[]): Cel
       ({ x: vStart, y: hStart, width: vEnd - vStart, height: hEnd - hStart, color: 'white' })))
 }
 
-function randChoice<T>(array: Array<T>): T {
-  return array[_.random(0, array.length)]
-}
-
 const palettes = [
   ['rgb(226, 35, 149)', 'rgb(28, 10, 39)', 'rgb(28, 10, 39)', 'rgb(26, 139, 122)'],
   ['rgb(225, 0, 0)', 'rgb(0, 17, 255)', 'rgb(243, 208, 0)', 'black'],
@@ -59,7 +55,7 @@ export function generateMondrian(constraints: GeneratorConstraints): MondrianDat
     if (!elligible.length)
       break
 
-    const [toSplit, index] = randChoice(elligible)
+    const [toSplit, index] = _.sample(elligible)
 
     const { cell1, cell2, line } = splitCell(toSplit, constraints)
     gridLines.push(line)
@@ -67,10 +63,10 @@ export function generateMondrian(constraints: GeneratorConstraints): MondrianDat
   }
 
   const coloration = Math.random() * 0.4 + 0.4
-  const palette = randChoice(palettes)
+  const palette = _.sample(palettes)
   gridCells.forEach(cell => {
     if (Math.random() < coloration)
-      cell.color = randChoice(palette)
+      cell.color = _.sample(palette)
   })
 
   return {
