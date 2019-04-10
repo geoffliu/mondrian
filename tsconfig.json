@@ -7,7 +7,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "strictFunctionTypes": true,
-    "outDir": "build"
+    "target": "es5"
   },
   "include": [
     "src/**/*"
