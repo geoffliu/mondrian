@@ -1,15 +1,9 @@
-import { Color } from './types'
+export const white = 'rgb(255, 255, 255)';
 
-const black = { r: 0, g: 0, b: 0 }
-const red = { r: 255, g: 0, b: 0 }
-const blue = { r: 0, g: 17, b: 255 }
-const yellow = { r: 243, g: 208, b: 0 }
-export const white = { r: 255, g: 255, b: 255 }
-
-export const palettes: Color[][] = [
+export const palettes: string[][] = [
   // ['rgb(226, 35, 149)', 'rgb(28, 10, 39)', 'rgb(28, 10, 39)', 'rgb(26, 139, 122)'],
-  [red, blue, yellow, black],
-  [red, blue, yellow],
+  ['rgb(255, 0, 0)', 'rgb(0, 17, 255)', 'rgb(243, 208, 0)', 'black'],
+  ['rgb(255, 0, 0)', 'rgb(0, 17, 255)', 'rgb(243, 208, 0)'],
   // ['rgb(201, 0, 12)', 'rgb(39, 53, 103)', 'rgb(253, 201, 0)', black],
   // ['rgb(201, 0, 12)', 'rgb(39, 53, 103)', 'rgb(253, 201, 0)'],
   // [red, 'rgb(213, 0, 83)', 'rgb(253, 137, 0)', 'rgb(255, 255, 0)'],

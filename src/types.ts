@@ -1,9 +1,3 @@
-export interface Color {
-  r: number
-  g: number
-  b: number
-}
-
 export interface OutputOptions {
   width: number
   height: number
@@ -20,7 +14,7 @@ export interface Cell {
   y: number
   width: number
   height: number
-  color: Color
+  color: string;
 }
 
 export interface Line {
