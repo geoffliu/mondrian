@@ -1,5 +1,11 @@
 {
-  "private": true,
+  "name": "gen-mondrian",
+  "version": "0.0.4",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/geoffliu/mondrian"
+  },
   "dependencies": {
     "lodash": "4.17.11"
   },
@@ -9,5 +15,10 @@
     "typescript": "^3.4.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
+  },
+  "files": ["build"],
+  "main": "build/index",
+  "scripts": {
+    "prepare": "tsc"
   }
 }
