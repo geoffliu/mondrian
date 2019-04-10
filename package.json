@@ -3,8 +3,8 @@
   "version": "0.0.4",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/geoffliu/mondrian"
+    "type": "git",
+    "url": "https://github.com/geoffliu/mondrian"
   },
   "dependencies": {
     "lodash": "4.17.11"
@@ -15,7 +15,9 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "main": "build/index",
   "scripts": {
     "prepare": "tsc",
