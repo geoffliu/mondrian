@@ -23,5 +23,6 @@ genMondrian(el)
 ## TODOs
 - [ ] Allow user to specify size of generated image
 - [ ] Allow user to specify palettes
+- [ ] Add some kind of testing
 
 
