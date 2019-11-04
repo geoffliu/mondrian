@@ -1,6 +1,6 @@
 # Random Mondrian Generator
 
-Lorem ipsum, but for images. See [full description](https://www.geoffliu.me/mondrian.html) for details.
+Lorem ipsum, but for images. See [demo and rationale](https://www.geoffliu.me/mondrian.html).
 
 ## Usage
 
@@ -22,6 +22,6 @@ genMondrian(el)
 
 ## TODOs
 - [ ] Allow user to specify size of generated image
-- [ ] Allow user to specify palettes
-
-
+- [ ] Express route handler
+- [ ] Simpler client-side interface
+- [ ] React wrapper
