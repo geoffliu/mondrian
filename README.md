@@ -25,3 +25,5 @@ genMondrian(el)
 - [ ] Express route handler
 - [ ] Simpler client-side interface
 - [ ] React wrapper
+- [ ] Add some kind of testing
+
